@@ -8,11 +8,10 @@ ARG BUILD_DATE
 RUN echo "VCS_REF: "${VCS_REF}", BUILD_DATE: "${BUILD_DATE}", VERSION: "${VERSION}
 
 LABEL maintainer="rsettlag@vt.edu" \
-      description="Dockerfile providing the canu assembler for long reads" \
+      description="Dockerfile providing the canu assembler for long reads - currently testing this" \
       version=${VERSION} \
       org.label-schema.vcs-ref=${VCS_REF} \
       org.label-schema.build-date=${BUILD_DATE} \
-      org.label-schema.vcs-url="https://github.com/rsettlag/canu"
 
 RUN apt-get update && \
     apt-get --yes install \
