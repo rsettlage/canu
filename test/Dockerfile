@@ -25,4 +25,4 @@ VOLUME /data
 WORKDIR /data
 
 ENTRYPOINT ["canu"]
-CMD ["--help"]
+CMD ["--version"]
